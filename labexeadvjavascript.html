@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="labexeadvjavascript.css">
+      <body>
+        <div class="calculator">
+          <h1>Calculator</h1>
+            <hr>
+            <br>
+          <h2 id="result"></h2>
+          <br>
+            <label for="first"> First number:</label>
+              <input type="text" id="first">
+              <br>
+              <br>
+              <label for="second"> Second number:</label>
+              <input type="text" id="second" name="second">
+              <br>
+              <br>
+              <button onclick="sum()">+</button>
+              <button onclick="difference()">-</button>
+              <button onclick="product()">*</button>
+              <button onclick="quotient()">/</button>
+              <br>
+              <br>
+              <h2 id="result"></h2>
+            </div>
+      </body>
+</html>
+
+
+    
+      
+<script>
+    function sum() {
+  var num1 = document.getElementById("first").value;
+  var num2 = document.getElementById("second").value;
+  
+  var compute = parseFloat(num1) + parseFloat(num2);
+  
+  if(!isNaN(compute)) {
+    document.getElementById("result").innerHTML = "The sum is " + compute;
+  }
+}
+
+function difference() {
+  var num1 = document.getElementById("first").value;
+  var num2 = document.getElementById("second").value;
+  
+  var compute = parseFloat(num1) - parseFloat(num2);
+  
+  if(!isNaN(compute)) {
+    document.getElementById("result").innerHTML = "The difference is " + compute;
+  }
+}
+
+
+function product() {
+  var num1 = document.getElementById("first").value;
+  var num2 = document.getElementById("second").value;
+  
+  var compute = parseFloat(num1) * parseFloat(num2);
+  
+  if(!isNaN(compute)) {
+    document.getElementById("result").innerHTML = "The product is " + compute;
+  }
+}
+
+function quotient() {
+  var num1 = document.getElementById("first").value;
+  var num2 = document.getElementById("second").value;
+  
+  var compute = parseFloat(num1) / parseFloat(num2);
+  
+  if(!isNaN(compute)) {
+    document.getElementById("result").innerHTML = "The quotient is " + compute;
+  }
+}
+</script>
