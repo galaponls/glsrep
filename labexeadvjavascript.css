@@ -1,0 +1,24 @@
+body {
+    background-color:#61B2C1;
+    text-align:center;
+    width: 100%;
+  }
+  
+  h1, h2 {
+    color:white;
+    font-size: 50px;
+    font-family: Segoe UI;
+  }
+  
+  label {
+    color: white;
+    font-size: 30px;
+    font-family: Segoe UI;
+  }
+  
+  input {
+    font-size:30px;
+    font-family: Segoe UI;
+    
+  }
+  
